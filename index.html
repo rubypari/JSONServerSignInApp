@@ -11,7 +11,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
-           VKR - Virtual Kaffee Round
+           JSON Server - Sign In / Sign up APP
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row border-bottom mb-4 pb-4">
-                    <div class="col-6"><h2>Welcome to Virtual Kaffee Round App</h2></div>
+                    <div class="col-6"><h2>Welcome to Db Json Server Example</h2></div>
                     <div class="col-6 text-right">
                         <button id="add-product-form" class="btn btn-success btn-sm mr-2">Add User</button>
                     </div>
@@ -68,7 +68,7 @@
         $(document).ready(function() {
 
             // Load users from local storage and display them
-            fetch('http://localhost:3000/users')
+            fetch('https://my-json-server.typicode.com/rubypari/JSONServerSignInApp/users')
             .then(response => response.json())
             .then(data => {
 
