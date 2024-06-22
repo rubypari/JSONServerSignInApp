@@ -52,3 +52,27 @@ body {
     margin-left: 250px; /* Adjust based on the width of your sidebar */
     width: calc(100% - 250px); /* Adjust based on the width of your sidebar */
 }
+
+/* Show sidebar for larger screens */
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        display: block;
+    }
+
+    /* Adjust page content to be beside the sidebar */
+    #page-content-wrapper {
+        margin-left: 250px; /* Adjust based on the width of your sidebar */
+        width: calc(100% - 250px); /* Adjust based on the width of your sidebar */
+    }
+}
+
+/* Mobile toggle button */
+  #sidebar-toggle {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    #sidebar-toggle {
+        display: none;
+    }
+}
